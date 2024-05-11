@@ -1,0 +1,169 @@
+# DOCBOT Documentation
+
+## Table of Contents
+
+1. [Abstract](#abstract)
+2. [Introduction](#introduction)
+3. [Background](#background)
+4. [System Architecture](#system-architecture)
+5. [Implementation](#implementation)
+6. [Testing](#testing)
+7. [Deployment](#deployment)
+8. [Maintenance](#maintenance)
+9. [Results](#results)
+10. [Conclusion](#conclusion)
+11. [Future Work](#future-work)
+12. [References](#references)
+
+## Abstract
+
+In today's knowledge-driven world, accessing and processing information is crucial for decision-making and productivity. However, reliance on internet connectivity often hinders access to vital information stored in documents. DOCBOT, an offline chatbot powered by machine learning and Langchain technology, addresses this challenge by providing an intelligent document assistant that seamlessly extracts and summarizes information from uploaded PDF documents without the need for an internet connection.
+
+DOCBOT's core functionality revolves around its ability to process and interpret PDF documents. Upon uploading a PDF, DOCBOT employs advanced natural language processing (NLP) techniques to extract key information and identify relevant concepts. This extracted information is then utilized to generate comprehensive and informative responses to user queries, even in the absence of an internet connection.
+
+DOCBOT's offline capabilities make it an invaluable tool for organizations and individuals operating in environments with limited or no internet access. Its ability to extract information and respond to queries from PDF documents makes it a versatile solution for tasks such as document summarization, question answering, and knowledge extraction.
+
+## Introduction
+
+DOCBOT is an offline document assistant that uses artificial intelligence to help you understand your documents. DOCBOT can read and understand any type of document, including PDFs, Word documents, and many more. It can then answer your questions about the document in a clear and concise way.
+
+### 1.1 Problem Definition
+
+In today's increasingly interconnected world, we rely on internet access for a wide range of activities, including communication, work, and entertainment. However, there are still many situations where internet access is unavailable or unreliable. In these cases, offline chatbots can provide a valuable alternative to traditional online chatbots.
+
+Specific Challenges:
+
+- Internet Dependence: Traditional online chatbots rely on an internet connection to function. This can be a major limitation in areas with poor or no internet infrastructure.
+- Privacy Concerns: Online chatbots often collect and store personal data from users, which raises privacy concerns. Offline chatbots can minimize these concerns by operating locally on the user's device.
+- Accessibility: Offline chatbots can be accessed by users with disabilities or those who lack access to traditional communication channels.
+
+### 1.2 Solution Approach
+
+The high-level architecture of the implementation can be seen as shown below:
+
+[Include architecture diagram here]
+
+The solution to the problem is divided into several key steps:
+
+1. Data preparation: The first step is to prepare the data that will be used to train the embedding model. This data can be text, code, or other types of data.
+2. Embedding model training: The next step is to train the embedding model. The embedding model is used to transform the data into a format that can be understood by the LLM model.
+3. Vector database creation: The next step is to create a vector database. The vector database stores the vectors that are produced by the embedding model.
+4. LLM model selection: The next step is to select an LLM model. The LLM model is used to perform tasks such as text generation, translation, and question answering.
+5. Application development: The next step is to develop the application. The application uses the embedding model, vector database, and LLM model to perform its tasks.
+6. Deployment: The final step is to deploy the application. The application can be deployed to a cloud platform or on-premises.
+
+### 1.3 Technologies Used
+
+In the implementation of this project, various technologies have been employed, each chosen for specific reasons:
+
+#### Embedding Model
+
+The embedding model, miniLM L6 V2, is responsible for transforming text input into a numerical representation that can be understood by the LLM model. This process involves breaking down the text into smaller units, such as words or phrases, and then mapping each unit to a unique vector of numbers. The vector representation captures the semantic meaning of the text input and allows the LLM model to process it effectively.
+
+#### Vector Database
+
+The vector database, Chroma, stores the vector representations of various text inputs. This database serves as a repository of knowledge for the LLM model, allowing it to access and utilize previously processed information. The use of a vector database improves the efficiency and performance of the system, as the LLM model doesn't need to reprocess the same text input each time.
+
+#### LLM Model
+
+The LLM model, Llama, is the core component of the LangChain process. It is responsible for generating text, translating languages, writing different creative content, and answering your questions in an informative way. The LLM model receives the vector representations from the embedding model and processes them using its internal neural network architecture. This process allows the LLM model to generate text that is relevant, coherent, and consistent with the input information.
+
+#### User Interface
+
+The user interface, Streamlit, provides a platform for interacting with the LangChain system. It allows users to input text, receive responses from the LLM model, and visualize the results. Streamlit's interactive nature enables users to explore the capabilities of the LLM model and gain insights from its generated text.
+
+These technologies have been carefully selected to leverage their strengths and capabilities, resulting in a robust and efficient implementation of the project.
+
+## Background
+
+The concept of DOCBOT emerged from the need to access and extract information from documents in offline environments. Traditional document processing methods often rely on internet connectivity, which can be a significant limitation in various scenarios, including remote areas, secure facilities, and during emergencies.
+
+DOCBOT aims to overcome these limitations by providing a self-contained solution that can operate without internet access. By leveraging machine learning and natural language processing techniques, DOCBOT empowers users to extract valuable insights from documents stored locally on their devices.
+
+## System Architecture
+
+DOCBOT's system architecture comprises several interconnected components that work together to provide its core functionality. The architecture can be divided into the following key modules:
+
+1. **Document Processor**: Responsible for ingesting and analyzing documents uploaded by users. This module utilizes natural language processing techniques to extract key information and generate summaries.
+
+2. **User Interface**: Provides a user-friendly interface for interacting with DOCBOT. Users can upload documents, ask questions, and receive responses through this interface.
+
+3. **Machine Learning Engine**: Powers the document processing capabilities of DOCBOT. This engine includes pre-trained models for text analysis, question answering, and summarization.
+
+4. **Data Storage**: Stores user documents, metadata, and other relevant information. This component ensures data integrity and facilitates efficient document retrieval and processing.
+
+5. **Offline Functionality**: Enables DOCBOT to operate in environments with limited or no internet access. This functionality is crucial for scenarios where internet connectivity is unreliable or unavailable.
+
+The interaction between these modules allows DOCBOT to provide intelligent document assistance, even in offline environments.
+
+## Implementation
+
+The implementation of DOCBOT involves several steps, including data preprocessing, model selection, and system integration. The following sections provide an overview of each step:
+
+### Data Preprocessing
+
+The first step in implementing DOCBOT is to preprocess the input data. This involves converting documents into a format that can be processed by the machine learning models. PDF documents are parsed to extract text, which is then tokenized and cleaned to remove noise and irrelevant information.
+
+### Model Selection
+
+Once the data is preprocessed, the next step is to select the appropriate machine learning models for document analysis. This includes models for text summarization, question answering, and semantic analysis. The selected models are trained on relevant datasets to ensure optimal performance.
+
+### System Integration
+
+With the models selected and trained, the final step is to integrate them into the DOCBOT system. This involves developing APIs for document upload, text analysis, and user interaction. The system is tested thoroughly to ensure functionality and reliability.
+
+## Testing
+
+Testing is an integral part of the DOCBOT development process. It involves validating the system's performance and functionality under various conditions. The following types of testing are conducted:
+
+1. **Unit Testing**: Tests individual components of the system to ensure they function correctly.
+
+2. **Integration Testing**: Tests the interaction between different modules to verify system behavior.
+
+3. **User Acceptance Testing**: Involves soliciting feedback from users to assess the system's usability and effectiveness.
+
+4. **Performance Testing**: Evaluates the system's performance metrics, such as response time and resource utilization.
+
+## Deployment
+
+DOCBOT can be deployed in a variety of environments, including:
+
+1. **Desktop Applications**: Deployed as standalone applications on desktop computers or laptops.
+
+2. **Mobile Applications**: Integrated into mobile devices for on-the-go document assistance.
+
+3. **Server Applications**: Hosted on servers for centralized document processing and access.
+
+Deployment involves packaging the application for the target platform and configuring it for optimal performance.
+
+## Maintenance
+
+Maintenance of DOCBOT involves monitoring system performance, addressing user feedback, and updating machine learning models as needed. Regular updates ensure that DOCBOT remains relevant and effective in meeting user needs.
+
+## Results
+
+The results of deploying DOCBOT have been promising, with users reporting increased efficiency and productivity in document processing tasks. Feedback from users has been positive, highlighting the system's ease of use and accuracy in extracting information from documents.
+
+## Conclusion
+
+DOCBOT represents a significant advancement in offline document processing technology. By leveraging machine learning and natural language processing techniques, DOCBOT provides users with intelligent document assistance, even in environments with limited internet access. The system's ability to extract and summarize information from documents has the potential to revolutionize how we interact with information in offline settings.
+
+## Future Work
+
+While DOCBOT has achieved notable success in its current form, there are several areas for future improvement and expansion:
+
+1. **Enhanced NLP Models**: Continued research and development of natural language processing models to improve accuracy and efficiency.
+
+2. **Integration with External Systems**: Integration with external systems and databases to enhance document analysis and retrieval capabilities.
+
+3. **Multimodal Support**: Support for processing and analyzing documents containing text, images, and other media types.
+
+4. **Localization**: Localization of the user interface and language support to accommodate users from diverse linguistic backgrounds.
+
+5. **Accessibility Features**: Implementation of accessibility features to ensure DOCBOT is usable by individuals with disabilities.
+
+## References
+
+[1] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.
+[2] Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O., ... & Zettlemoyer, L. (2020). BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension. arXiv preprint arXiv:1910.13461.
+[3] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. In Advances in neural information processing systems (pp. 5998-6008).
